@@ -399,6 +399,13 @@ import template from './libraryoptionseditor.template.html';
             parent.querySelector('#txtSeasonZeroName').removeAttribute('required');
         }
 
+        if (contentType === "music")
+        {
+            parent.querySelector('.chkOptionEnableContinueListeningForMusicContainer').classList.remove('hide');
+        } else {
+            parent.querySelector('.chkOptionEnableContinueListeningForMusicContainer').classList.add('hide');
+        }
+
         if (contentType === 'books' || contentType === 'boxsets' || contentType === 'playlists' || contentType === 'music') {
             parent.querySelector('.chkEnableEmbeddedTitlesContainer').classList.add('hide');
         } else {
@@ -503,6 +510,7 @@ import template from './libraryoptionseditor.template.html';
             EnableInternetProviders: true,
             SaveLocalMetadata: parent.querySelector('#chkSaveLocal').checked,
             EnableAutomaticSeriesGrouping: parent.querySelector('.chkAutomaticallyGroupSeries').checked,
+            EnableContinueListeningForMusic: parent.querySelector('.chkOptionEnableContinueListeningForMusic').checked,
             PreferredMetadataLanguage: parent.querySelector('#selectLanguage').value,
             MetadataCountryCode: parent.querySelector('#selectCountry').value,
             SeasonZeroDisplayName: parent.querySelector('#txtSeasonZeroName').value,
@@ -559,6 +567,7 @@ import template from './libraryoptionseditor.template.html';
         parent.querySelector('.chkExtractChapterImages').checked = options.EnableChapterImageExtraction;
         parent.querySelector('#chkSaveLocal').checked = options.SaveLocalMetadata;
         parent.querySelector('.chkAutomaticallyGroupSeries').checked = options.EnableAutomaticSeriesGrouping;
+        parent.querySelector('.chkOptionEnableContinueListeningForMusic').checked = options.EnableContinueListeningForMusic;
         parent.querySelector('#chkEnableEmbeddedTitles').checked = options.EnableEmbeddedTitles;
         parent.querySelector('#chkEnableEmbeddedEpisodeInfos').checked = options.EnableEmbeddedEpisodeInfos;
         parent.querySelector('#chkSkipIfGraphicalSubsPresent').checked = options.SkipSubtitlesIfEmbeddedSubtitlesPresent;

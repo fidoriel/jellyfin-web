@@ -1161,6 +1161,8 @@
     "OptionAllUsers": "All users",
     "OptionAutomaticallyGroupSeries": "Automatically merge series that are spread across multiple folders",
     "OptionAutomaticallyGroupSeriesHelp": "Series that are spread across multiple folders within this library will be automatically merged into a single series.",
+    "LabelOptionEnableContinueListeningForMusic": "Add unfinished track after listening to continue listening section",
+    "LabelOptionEnableContinueListeningForMusicHelp": "When stopping a title in the middle jellyfin will remember the position.",
     "OptionBluray": "BD",
     "OptionCaptionInfoExSamsung": "CaptionInfoEx (Samsung)",
     "OptionCommunityRating": "Community Rating",

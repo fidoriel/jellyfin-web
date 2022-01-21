@@ -548,6 +548,8 @@
     "OptionDatePlayed": "Date Played",
     "OptionAutomaticallyGroupSeriesHelp": "Programmes that are spread across multiple folders within this library will be automatically merged into a single programme.",
     "OptionAutomaticallyGroupSeries": "Automatically merge programmes that are spread across multiple folders",
+    "LabelOptionEnableContinueListeningForMusic": "Add unfinished track after listening to continue listening section",
+    "LabelOptionEnableContinueListeningForMusicHelp": "This might be useful for long concerts or Audiobooks managed via the Music Library.",
     "OptionAllowVideoPlaybackTranscoding": "Allow video playback that requires transcoding",
     "OptionAllowVideoPlaybackRemuxing": "Allow video playback that requires conversion without re-encoding",
     "OptionAllowUserToManageServer": "Allow this user to manage the server",
